@@ -1,0 +1,18 @@
+[package]
+name = "tls_term"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mimalloc = { version = "*", default-features = false }
+
+rustls = { version = "0.20" }
+rustls-pemfile = "0.2"
+
+mio = { version = "0.7", features = ["os-poll", "tcp"] }
+
+log = { version = "0.4" }
+sct = "0.7"
+docopt = "1.1"
+serde = "1.0"
+serde_derive = "1.0"

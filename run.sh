@@ -1,0 +1,1 @@
+cargo build --release && ./target/release/tls_term --certs tls-term.co.cert --key tls-term.co.key http
